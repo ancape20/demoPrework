@@ -1,0 +1,60 @@
+/*Elemento universal Recomendacion:Usar Siempre */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Clase de barra de navegacion  */
+
+.main_nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Lista sin orden sin punto */
+    list-style: none;
+}
+
+.main_nav_item {
+    /*Modo de display en linea */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+
+/* Cambia todas la anclas o hipervinculos dentro de main nav item*/
+
+.main_nav_item a {
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: #A3CDD9;
+}
+
+
+/* Cambia el estilo de una clase segun la accion que este sucediendo en el,
+   por ejemplo hover=pasar por encima con el mouse */
+
+.main_nav_item a:hover {
+    background-color: #506AD4;
+    color: black;
+    border-radius: 2px;
+}
+
+
+/* Hereda todos los estilos de main_nav_item a pero se sobre escribe los estilos repetidos */
+
+#home {
+    color: brown;
+}
+
+#listaCompra ol {
+    margin-left: 30px;
+}

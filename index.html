@@ -5,11 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holi</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Apuntes Ancape</title>
 </head>
 
 <body>
-    <h1> HOLAAAAAA BEBEEeEE </h1>
+    <header>
+        <!--El encabezado del documentro -->
+        <nav>
+
+            <!--La barra de navegacion-->
+            <ul class="main_nav">
+                <!--La clase marca el estilo en css que utiliza-->
+                <li class="main_nav_item"><a id="home" href="#">Home</a></li>
+                <li class="main_nav_item"><a href="#">HTML</a> </li>
+                <li class="main_nav_item"><a href="#">CSS</a></li>
+                <li class="main_nav_item"><a href="#">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Contenido principal de la pagina web-->
+        <section>
+            <article>
+                <ul id="listaCompra">
+                    <!--Lista Desordenada-->
+                    <li>
+                        Frutas
+                        <ol>
+                            <li>Manzana</li>
+                            <li>Pera</li>
+                            <li>Limon</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Aseo
+                        <ol>
+                            <!--Lista ordenada-->
+                            <li>Detergente</li>
+                            <li>Jabón</li>
+                            <li>Blanqueador</li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <figure>
+                <!--Etiqueta correcta para Imagenes -->
+                <img src="./images/gatos-gestos-m.jpg" alt="Es un gato Miau" />
+                <figcaption>Un gato miau jijiji</figcaption>
+            </figure>
+        </section>
+        <section>
+            <form action="">
+                <!-- Tipos de inputs mas usados-->
+                <label for="nombre">
+                    <span>Nombre:</span>
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" placeholder="Pepito Perez">
+                </label><br>
+                <label for="email">
+                    <span>Email:</span>
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="coreeo@mail.com">
+                </label><br>
+                <label for="cumple">
+                    <span>Cumpleaños</span>
+                    <input type="date">
+                </label><br>
+                <label for="hora">
+                    <span>Que hora es ??</span>
+                    <input type="time">
+                </label><br>
+                <label for="idioma">
+                    <span>Idioma preferido</span>
+                    <input list="idiomas">
+                    <datalist id="idiomas">
+                        <option value="espanol">Español</option>
+                        <option value="ingles">Ingles</option>
+                    </datalist>
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!--Pie de pagina -->
+    </footer>
 </body>
 
 </html>
