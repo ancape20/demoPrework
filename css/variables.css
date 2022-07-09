@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Para declarar variables se hace en Root, con el fin de 
+Tenerlos siempre disponibles */
+
+:root {
+    --primary-color: #003476;
+    --secondary-color: #b4d2f7;
+    --header-size: 4rem;
+    --font: 1.8rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+
+.main_nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Lista sin orden sin punto */
+    list-style: none;
+}
+
+.main_nav_item {
+    /*Modo de display en linea */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+
+/* Cambia todas la anclas o hipervinculos dentro de main nav item*/
+
+.main_nav_item a {
+    /* todo a que este dentro de un main_nav_item*/
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: #A3CDD9;
+}
+
+
+/* Cambia el estilo de una clase segun la accion que este sucediendo en el,
+   por ejemplo hover=pasar por encima con el mouse */
+
+.main_nav_item a:hover {
+    background-color: #506AD4;
+    color: black;
+    border-radius: 2px;
+}
+
+
+/* Hereda todos los estilos de main_nav_item a pero se sobre escribe los estilos repetidos */
+
+#home {
+    color: brown;
+}
+
+main {
+    width: 100VW;
+    height: 70vh;
+    font-size: var(--font);
+}
+
+h1 {
+    font-size: var(--header-size);
+    color: var(--primary-color);
+}
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secondary-color);
+}
